@@ -3,6 +3,7 @@ layout: post
 title:  "Java SDK Runtime GA Plan"
 date:   2016-12-20 17:56:00 -0800
 author: "Jianghao Lu"
+comments: true
 ---
 
 ## Goals to achieve
