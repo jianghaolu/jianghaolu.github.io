@@ -50,3 +50,6 @@ author: "Jianghao Lu"
 - Azure Jackson mapper adapter
 - Default retry handler with expotential strategy
 - Default endpoint `AzureEnvironment.AZURE.getResourceManagerEndpoint()`
+
+### Changes required in AutoRest
+- `mapperAdapter()` to `serializerAdapter()`
