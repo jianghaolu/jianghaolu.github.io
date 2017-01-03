@@ -10,14 +10,14 @@ comments: true
 
 - [ ] Having RestClient as the center piece, everything except the dependency of OkHttp and Retrofit to be pluggable
 - [ ] `restClient.newBuilder().build()` should create a new RestClient with exactly the same behavior with everything copied
-- [ ] RestClient is immutable except for header
+- [x] RestClient is immutable except for header and log level
 - [ ] Having a protocol interface for every pluggable
-- [ ] Wrapped logging mechanism complying with slf4j
+- [x] Wrapped logging mechanism complying with slf4j
 - [ ] Limit the number of public methods
 - [ ] Use unique names over simple names
 - [ ] Use more factory methods than constructors
 - [ ] Make classes final when possible
-- [ ] Simplier (de)serializer protocol
+- [x] Simplier (de)serializer protocol
 - [ ] Simplier response builder protocol
 - [ ] Use more composition over inheritance for simpler protocols between runtime and azure runtime
 - [ ] Use unchecked exceptions
@@ -30,8 +30,10 @@ comments: true
 ### Compositions
 
 **Staticly required:**
-- An `OkHttp` client
-- A `Retrofit` client
+- An `OkHttp3` client
+- A `Retrofit2` client
+
+n.b. Other than the staticly required dependencies, every other class needs to be either wrapped or adapted.
 
 **Dynamically required:**
 - A (de)serializer
